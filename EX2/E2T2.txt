@@ -1,0 +1,5 @@
+1. All HTTP request should be redirect to HTPPS by LoadBalancer. All request be validate with SSL. - Redirect request to HTTPS and limit the amount of request in case of overload
+2. IAM policy give full access to the resources - The IAM policy should be readonly
+3. S3 should enable both serverside encryption and log - All S3 data should be encrypted and logging should be enabled
+4. IAM password policy is too simple - Password policy must be more stricted
+5. It is easily to access Application through many port - Should allow some specific port

@@ -1,0 +1,5 @@
+# Poor practice 1
+Files uploaded to S3 are not encrypted and the S3 buckets not block public access. In case that some one have no right to access the files in the S3 bucket, the can view all the data easily
+
+# Poor practice 2
+The IAM role shouldn't have administrative access to S3

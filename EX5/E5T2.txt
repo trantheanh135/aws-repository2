@@ -1,0 +1,19 @@
+1. Scan infrastructure as code templates
+- We can use Checkov for scan. It is for analyzing static codes for IaC. To detect cloud misconfigurations, it scans your cloud infrastructure, which is managed in Kubernetes, Terraform, and Cloudformation.
+     
+- Example: Ensure all data stored in the S3 bucket is securely encrypted at rest
+
+
+2. Scan AMI’s or containers for OS vulnerabilities
+- Use Anchore or Clair
+
+Example: [INFO] ▶ Start clair-scanner
+[INFO] ▶ Server listening on port 9279
+[INFO] ▶ Analyzing 693bdf455e7bf0952f8a4539f9f96aa70c489ca239a7dbed0afb481c87cbe131
+[CRIT] ▶ Image contains unapproved vulnerabilities: [CVE-2016-9840 CVE-2016-9841 CVE-2016-9842 CVE-2016-9843]
+
+3. Scan an AWS environment for cloud configuration vulnerabilities
+- AWS SecurityHub
+
+Example: Ensure credentials unused for 90 days or greater are disabled.
+Ensure IAM password policy requires at least one symbol

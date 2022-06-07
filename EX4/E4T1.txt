@@ -1,0 +1,3 @@
+- Should prevent ssh connect from the public internet to the EC2.
+- The ssh connection shouldn't have the root permisssion, because this will allow to access any sources of the EC2 and this is very dangerous
+- Should use Complex passwords or not allow login with user, password and allow login with key pairs 
